@@ -1,0 +1,44 @@
+#firstPage {
+  background-color: #FFE614;
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  background-color: #f1f1f1;
+  display: block;
+  position: relative;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+#fullPageHeader {
+  display: block;
+  position: absolute;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 180px;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  width: 900px;
+}
+
+.spacer {
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
