@@ -1,27 +1,32 @@
+$backgound-color: #ffe614;
+$button-color: #f1f1f1;
+$button-size: 200px;
+$font: "Darker Grotesque", sans-serif;
+
 #firstPage {
-  background-color: #FFE614;
+  background-color: $backgound-color;
 }
 
 .button {
   border: 1px solid;
   border-radius: 20px;
   padding: 5px 10px 5px 10px;
-  background-color: #f1f1f1;
+  background-color: $button-color;
   display: block;
   position: relative;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: $font;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
   text-transform: uppercase;
-  width: 200px;
+  width: $button-size;
 }
 
 #fullPageHeader {
   display: block;
   position: absolute;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: $font;
   font-optical-sizing: auto;
   font-weight: 550;
   font-style: normal;
@@ -35,8 +40,7 @@
   position: relative;
   margin: auto;
   width: 900px;
-  
 }
 .spacer {
-    height: 100px;
+  height: 100px;
 }
