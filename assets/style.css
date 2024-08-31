@@ -17,6 +17,9 @@
   text-transform: uppercase;
   width: 200px;
 }
+.button:hover {
+  background-color: rgb(84, 86, 81);
+}
 
 #fullPageHeader {
   display: block;
