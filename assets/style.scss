@@ -1,29 +1,13 @@
-$backgound-color: #ffe614;
+$background-color: #ffe614;
 $button-color: #f1f1f1;
 $button-size: 200px;
 $font: "Darker Grotesque", sans-serif;
 
 #firstPage {
-  background-color: $backgound-color;
+  background-color: $background-color;
 }
-
-.button {
-  border: 1px solid;
-  border-radius: 20px;
-  padding: 5px 10px 5px 10px;
-  background-color: $button-color;
-  display: block;
-  position: relative;
-  font-family: $font;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  text-transform: uppercase;
-  width: $button-size;
-  &:hover {
-    background-color:rgb(84, 86, 81);
-}
+.m-auto {
+  margin: auto;
 }
 
 #fullPageHeader {
@@ -46,4 +30,45 @@ $font: "Darker Grotesque", sans-serif;
 }
 .spacer {
   height: 100px;
+}
+
+@mixin btn-position(
+  $left: null,
+  $right: null,
+  $top: null,
+  $bottom: null,
+  $position: static
+) {
+  position: $position;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  background-color: $button-color;
+  display: block;
+  position: relative;
+  font-family: $font;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: $button-size;
+  &:hover {
+    background-color: rgb(84, 86, 81);
+  }
+
+  &.first {
+    @include btn-position(25px, null, 40px, null, static);
+  }
+
+  &.second {
+    @include btn-position(null, 20px, null, 20px, absolute);
+  }
 }
