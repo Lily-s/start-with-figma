@@ -25,8 +25,16 @@
   width: 900px;
 }
 
-.spacer {
-  height: 100px;
+.top100space {
+  margin-top: 100px;
+}
+
+.top150space {
+  margin-top: 150px;
+}
+
+.bottom50space {
+  margin-bottom: 50px;
 }
 
 .button {
